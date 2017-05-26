@@ -1,0 +1,26 @@
+{
+  "name": "timestampservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfaudreejr/timestampservice.git"
+  },
+  "keywords": [
+    "timestamp"
+  ],
+  "author": "Larry Faudree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfaudreejr/timestampservice/issues"
+  },
+  "homepage": "https://github.com/lfaudreejr/timestampservice#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}
