@@ -1,4 +1,5 @@
 var express = require('express'),
+    getStamps = require('./dateObj'),
     app = express();
 
 app.set('view engine', 'ejs');
@@ -11,10 +12,10 @@ app.get('/', function(req, res) {
 //Request Route
 app.get('/:timestamp', function(req, res) {
     var request = req.params.timestamp;
-
-    res.send(request);
+    var timeStamps = JSON.stringify(getStamps(request));
+    res.send(timeStamps);
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
-    console.log("Listening on 3000");
+    console.log("Listening...");
 });
